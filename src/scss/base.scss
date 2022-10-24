@@ -1,0 +1,27 @@
+$bgColor: #202931;
+$hoverColor: #BAA174;
+
+$fontSize: 14px;
+
+$lineHeight: 16px;
+
+$letterSpacing: 1%;
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: $bgColor;
+}
+
+._container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0px 15px;
+  box-sizing: content-box;
+}
+
+a:hover {
+  color: $hoverColor;
+}

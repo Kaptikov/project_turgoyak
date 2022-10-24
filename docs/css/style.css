@@ -1,0 +1,281 @@
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: HelveticaLight;
+  font-display: swap;
+  src: url("../fonts/helvetica_light.woff2") format("woff2"), url("../fonts/helvetica_light.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: HelveticaRegular;
+  font-display: swap;
+  src: url("../fonts/helvetica_regular.woff2") format("woff2"), url("../fonts/helvetica_regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: HelveticaLight;
+  font-display: swap;
+  src: url("../fonts/helvetica_light.woff2") format("woff2"), url("../fonts/helvetica_light.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: HelveticaRegular;
+  font-display: swap;
+  src: url("../fonts/helvetica_regular.woff2") format("woff2"), url("../fonts/helvetica_regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: #fff;
+  line-height: 1;
+  font-family: HelveticaLight;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input,
+button,
+textarea {
+  font-family: HelveticaLight;
+  font-size: inherit;
+}
+
+button {
+  cursor: pointer;
+  color: inherit;
+  background-color: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: #202931;
+}
+
+._container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0px 15px;
+  box-sizing: content-box;
+}
+
+a:hover {
+  color: #BAA174;
+}
+
+svg path {
+  stroke: inherit;
+  stroke-width: inherit;
+  fill: inherit;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  margin-top: 33px;
+  line-height: 16px;
+  letter-spacing: 1%;
+}
+.header__logo {
+  padding: 0px 80px 0px 166px;
+}
+.header__socials {
+  display: flex;
+  justify-content: space-between;
+  width: 85px;
+  margin-right: 25px;
+}
+.header__socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #BAA174;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+}
+.header__socials-link {
+  color: #BAA174;
+}
+.header__socials-link:hover {
+  background-color: #BAA174;
+  color: #202931;
+}
+.header__contacts {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 25px;
+}
+.header__contacts-tel {
+  padding-right: 25px;
+  letter-spacing: 0.01em;
+}
+.header__contacts-link {
+  color: #BAA174;
+  letter-spacing: 0.045em;
+}
+.header__contacts-link:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+  letter-spacing: 0.045em;
+}
+
+.menu__list {
+  display: flex;
+  flex-direction: row;
+}
+.menu li:not(:last-child) {
+  padding-right: 50px;
+}
+
+.burger-menu {
+  font-family: Poppins;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 77px;
+}
+.burger-menu :hover {
+  color: #BAA174;
+}
+.burger {
+  position: relative;
+  width: 17px;
+  height: 10px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+.burger span:hover {
+  background-color: #BAA174;
+}
+.burger__line {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  transform: translateY(-50%);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.burger-menu:hover .burger__line {
+  background-color: #BAA174;
+}
+
+.burger-menu:hover .burger::before {
+  background-color: #BAA174;
+}
+
+.burger-menu:hover .burger::after {
+  background-color: #BAA174;
+}
+
+.burger-menu:hover .burger-menu__title {
+  color: #BAA174;
+}
+
+.burger::before,
+.burger::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, bottom 0.3s;
+}
+
+.burger::before {
+  top: 0;
+}
+
+.burger::after {
+  bottom: 0;
+}
+
+.burger--active .burger__line {
+  opacity: 0;
+}
+
+.burger--active::before {
+  top: 50%;
+  transform: rotate(45deg);
+}
+
+.burger--active::after {
+  bottom: auto;
+  top: 50%;
+  transform: rotate(-45deg);
+}

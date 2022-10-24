@@ -1,0 +1,23 @@
+@font-face {
+	font-family: Gilroy;
+	font-display: swap;
+	src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: HelveticaLight;
+	font-display: swap;
+	src: url("../fonts/helvetica_light.woff2") format("woff2"), url("../fonts/helvetica_light.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: HelveticaRegular;
+	font-display: swap;
+	src: url("../fonts/helvetica_regular.woff2") format("woff2"), url("../fonts/helvetica_regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
