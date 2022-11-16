@@ -1,0 +1,97 @@
+.features {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../img/features_bg.jpg) no-repeat center/cover;
+
+  // .features__contianer
+  &__contianer {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    // background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    //   url(../img/features_bg.jpg) no-repeat center/cover;
+    // min-height: 775px;
+    margin-bottom: 85px;
+  }
+
+  // .features__title
+  &__title {
+    align-self: flex-end;
+    padding-top: 112px;
+    margin-right: 350px;
+    font-family: GaramondPremierPro;
+    font-weight: 300;
+    @include adaptiv-font(85, 48);
+    line-height: 92%;
+    letter-spacing: -0.015em;
+    width: 396px;
+  }
+
+  &__card {
+    position: relative;
+    top: 72px;
+    align-self: flex-end;
+  }
+
+  // .features__items
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    counter-reset: ol-numbers;
+    background-color: $bgColor;
+    max-width: 842px;
+    height: 100%;
+    padding: 82px 0 72px 83px;
+  }
+
+  // .features__item
+  &__item {
+    font-family: GaramondPremierPro;
+    position: relative;
+    margin-bottom: 50px;
+    // border: 1px solid $hoverColor;
+  }
+
+  &__item::before {
+    content: "0"counter(ol-numbers);
+    counter-increment: ol-numbers;
+    color: $hoverColor;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 92%;
+    letter-spacing: -0.015em;
+  }
+
+  &__item::marker {
+    display: none;
+  }
+
+  &__items li:not(last-child) {
+    margin-right: 124px;
+  }
+
+  &__item-content {
+    padding-left: 22px;
+    max-width: 219px;
+  }
+
+  // .features__item-title
+  &__item-title {
+    padding: 35px 0 12px 0;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 92%;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+  }
+
+  // .features__item-text
+  &__item-text {
+    font-family: Helvetica;
+    line-height: 146.99%;
+    letter-spacing: 0.04em;
+  }
+}

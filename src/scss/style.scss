@@ -1,6 +1,17 @@
+@import "../../node_modules/swiper/swiper.scss";
+@import "../../node_modules/swiper/modules/navigation/navigation.scss";
+@import "../../node_modules/swiper/modules/pagination/pagination.scss";
+@import "../../node_modules/swiper/modules/effect-fade/effect-fade.scss";
+
 @import "fonts.scss";
 
 @import "null.scss";
 @import "base.scss";
 
 @import "header.scss";
+
+@import "mainblock.scss";
+
+@import "immovables.scss";
+
+@import "features_complex.scss";

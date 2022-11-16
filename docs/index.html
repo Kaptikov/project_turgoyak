@@ -10,9 +10,9 @@
 
 <body>
   <div class="wrapper">
-    <header>
+    <header class="header">
   <div class="header__container _container">
-    <nav class="header__menu menu" data-menu>
+    <nav class="header__menu menu">
       <ul class="menu__list">
         <li class="menu__item">
           <a href="#">
@@ -55,50 +55,333 @@
       <p class="header__contacts-tel">
         <span style="color: rgba(255, 255, 255, 0.5);">8 351 </span>/ 200 27 91
       </p>
-      <a href="#" class="header__contacts-link">
+      <a href="tel:+83512002791" class="header__contacts-link">
         Заказать звонок
       </a>
     </div>
 
-    <button class="burger-menu" data-burger-menu aria-label="Открыть меню" aria-expanded="false">
-      <span class="burger-menu__title" data-menuTxt id="menu-txt">Меню</span>
-      <span class="burger" data-burger="">
+    <button class="burger__btn" data-burger__btn aria-label="Открыть меню" aria-expanded="false">
+      <span class="burger__btn__title" data-menuTxt id="menu-txt">Меню</span>
+      <span class="burger" data-burger>
         <span class="burger__line"></span>
       </span>
     </button>
   </div>
-  <!-- <ul class="menu__burger">
-        <li class="menu__burger__item">
+
+  <!-- <div class="header__container-second" data-menu>
+    <div class="header__burger-menu burger-menu _container">
+      <div class="burger-menu__logo" data-logo>
+        <a class="burger-menu__link" href="#">
+          <svg width="138px" height="60px">
+            <use xlink:href="img/icons/icons.svg#logo"></use>
+          </svg>
+        </a>
+      </div>
+      <nav class="burger-menu__container-first">
+        <ul class="burger-menu__list">
+          <li class="burger-menu__item">
+            <a href="#">Стать владельцем</a>
+          </li>
+          <li class="burger-menu__item">
+            <a href="#">Инфраструктура</a>
+          </li>
+          <li class="burger-menu__item">
+            <a href="#">Документация</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="burger-menu__container-second">
+        <div class="burger-menu__contacts">
+          <span>Телефон</span>
+          <p class="burger-menu__contacts-tel">
+            8 351 / 200 27 91
+          </p>
+        </div>
+        <div class="burger-menu__socials">
+          <a class="burger-menu__socials-link" href="#">
+            <svg width="15px" height="15px" fill="none">
+              <use xlink:href="img/icons/icons.svg#viber"></use>
+            </svg>
+          </a>
+          <a class="burger-menu__socials-link" href="#">
+            <svg width="14px" height="12px" fill="none">
+              <use xlink:href="img/icons/icons.svg#telegram"></use>
+            </svg>
+          </a>
+        </div>
+        <a href="tel:+83512002791" class="burger-menu__order">
+          <svg width="35px" height="19px" fill="none">
+            <use xlink:href="img/icons/icons.svg#arrow"></use>
+          </svg>
+          <p>Заказать звонок</p>
+        </a>
+      </div>
+    </div>
+  </div> -->
+</header>
+    <div class="header__container-second" data-menu>
+  <div class="header__burger-menu burger-menu _container">
+    <div class="burger-menu__logo" data-logo>
+      <a class="burger-menu__link" href="#">
+        <svg width="138px" height="60px">
+          <use xlink:href="img/icons/icons.svg#logo"></use>
+        </svg>
+      </a>
+    </div>
+    <button class="burger__btn" data-burger__btn aria-label="Открыть меню" aria-expanded="false">
+      <span class="burger__btn__title" data-menuTxt id="menu-txt">Меню</span>
+      <span class="burger" data-burger>
+        <span class="burger__line"></span>
+      </span>
+    </button>
+    <nav class="burger-menu__container-first">
+      <ul class="burger-menu__list">
+        <li class="burger-menu__item">
           <a href="#">Стать владельцем</a>
         </li>
-        <li class="menu__burger__item">
+        <li class="burger-menu__item">
           <a href="#">Инфраструктура</a>
         </li>
-        <li class="menu__burger__item">
+        <li class="burger-menu__item">
           <a href="#">Документация</a>
         </li>
-        <li class="menu__burger__item">
-          <span>Телефон</span>
-          <a href="#">8 351 / 200 27 91</a>
-        </li>
-        <li class="menu__burger__item">
-          <a href="#">
-            <img src="img/viber.svg" alt="">
-          </a>
-          <a href="#">
-            <img src="img/telegram.svg" alt="">
-          </a>
-        </li>
-        <li class="menu__burger__item">
-          <img src="img/arrow.svg" alt="">
-          <a href="#">Заказать звонок</a>
-        </li>
-      </ul> -->
+      </ul>
+    </nav>
+    <div class="burger-menu__container-second">
+      <div class="burger-menu__contacts">
+        <span>Телефон</span>
+        <p class="burger-menu__contacts-tel">
+          8 351 / 200 27 91
+        </p>
+      </div>
+      <div class="burger-menu__socials">
+        <a class="burger-menu__socials-link" href="#">
+          <svg width="15px" height="15px" fill="none">
+            <use xlink:href="img/icons/icons.svg#viber"></use>
+          </svg>
+        </a>
+        <a class="burger-menu__socials-link" href="#">
+          <svg width="14px" height="12px" fill="none">
+            <use xlink:href="img/icons/icons.svg#telegram"></use>
+          </svg>
+        </a>
+      </div>
+      <a href="tel:+83512002791" class="burger-menu__order">
+        <svg width="35px" height="19px" fill="none">
+          <use xlink:href="img/icons/icons.svg#arrow"></use>
+        </svg>
+        <p>Заказать звонок</p>
+      </a>
+    </div>
   </div>
-</header>
+</div>
 
     <main class="page">
-      
+      <div class="page__main-block main-block">
+  <div class="main-block__content">
+    <div class="main-block__container _container">
+      <div class="main-block__left-side">
+        <h3 class="main-block__title">Апартаменты
+          на легендарном
+          озере Тургояк</h3>
+        <div class="main-block__buttons">
+          <button class="main-block__btn">Записаться на экскурсию</button>
+          <div class="first__swiper swiper">
+            <!-- Additional required wrapper -->
+            <div class="first__swiper-wrapper swiper-wrapper">
+              <!-- Slides -->
+              <div class="first__swiper-slide swiper-slide">
+              </div>
+              <div class="first__swiper-slide swiper-slide">
+              </div>
+              <div class="first__swiper-slide swiper-slide">
+              </div>
+            </div>
+            <div class="first__swiper-navigation">
+              <div class="first__swiper-swiper-button swiper-button-prev">
+                <svg width="24px" height="13px" fill="none">
+                  <use xlink:href="img/icons/icons.svg#arrow"></use>
+                </svg>
+              </div>
+              <div class="first__swiper-swiper-button swiper-button-next">
+                <svg width="24px" height="13px" fill="none">
+                  <use xlink:href="img/icons/icons.svg#arrow"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main__swiper swiper">
+    <!-- Additional required wrapper -->
+    <div class="main__swiper-wrapper swiper-wrapper">
+      <!-- Slides -->
+      <div class="main__swiper-slide swiper-slide">
+        <img src="img/slide_mainblock.jpg" alt="">
+      </div>
+      <div class="main__swiper-slide swiper-slide">
+        <img src="img/Rectangle5.jpg" alt="">
+      </div>
+      <div class="main__swiper-slide swiper-slide">
+        <img src="img/slide_mainblock.jpg" alt="">
+      </div>
+    </div>
+    <div class="main__swiper-navigation">
+      <div class="main__swiper-pagination swiper-pagination"></div>
+      <div class="main__swiper-swiper-button swiper-button-prev">
+        <svg width="24px" height="13px" fill="none">
+          <use xlink:href="img/icons/icons.svg#arrow"></use>
+        </svg>
+      </div>
+      <div class="main__swiper-swiper-button swiper-button-next">
+        <svg width="24px" height="13px" fill="none">
+          <use xlink:href="img/icons/icons.svg#arrow"></use>
+        </svg>
+      </div>
+    </div>
+    <!-- <div class="main__swiper-pagination swiper-pagination"></div> -->
+  </div>
+</div>
+<div class="main__block-mask"></div>
+      <div class="features">
+  <div class="features__contianer">
+    <!-- <div class="features-complex__image _ibg">
+      <img src="img/features_bg.jpg" alt="header__bg">
+    </div> -->
+    <h3 class="features__title">Особенности
+      комплекса</h3>
+    <div class="features__card">
+      <ol class="features__items">
+        <li class="features__item">
+          <div class="features__item-content">
+            <h4 class="features__item-title">УНИКАЛЬНОСТЬ</h4>
+            <span class="features__item-text">Подобного проекта больше нет на территории Урала</span>
+          </div>
+        </li>
+        <li class="features__item">
+          <div class="features__item-content">
+            <h4 class="features__item-title">Доступность</h3>
+              <span class="features__item-text">Предоставляется рассрочка сроком до 25 лет от компании
+                застройщика</span>
+          </div>
+        </li>
+        <li class="features__item">
+          <div class="features__item-content">
+            <h4 class="features__item-title">ПРИВАТНОСТЬ</h4>
+            <span class="features__item-text">Всего 14 домов на закрытой территории с закрытым пляжем</span>
+          </div>
+        </li>
+        <li class="features__item">
+          <div class="features__item-content">
+            <h4 class="features__item-title">ЭКОЛОГИЯ</h3>
+              <span class="features__item-text">Чистейшая экология вокруг, материалы домов из экологически чистых
+                материалов</span>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</div>
+</div>
+      <div class="immovables">
+  <div class="immovabes__container _container">
+    <div class="immovables__swiper swiper">
+      <h3 class="immovables__title">
+        Наша недвижимость
+      </h3>
+      <!-- Additional required wrapper -->
+      <div class="immovables__swiper-wrapper swiper-wrapper">
+        <!-- Slides -->
+        <div class="immovables__swiper-slide swiper-slide">
+          <div class="immovables__swiper-img">
+            <img src="img/immovables1.jpg" alt="">
+          </div>
+          <h4 class="immovables__swiper-title">
+            Дом из карагача
+          </h4>
+          <p class="immovables__swiper-text">
+            Описание дома и его особенностей в несколько строк
+          </p>
+          <a href="#" class="immovables__swiper-link">
+            <svg width="38px" height="21px" fill="none">
+              <use xlink:href="img/icons/icons.svg#arrow"></use>
+            </svg>
+            <p>Подробнее</p>
+          </a>
+        </div>
+
+        <div class="immovables__swiper-slide swiper-slide">
+          <div class="immovables__swiper-img">
+            <img src="img/immovables2.jpg" alt="">
+          </div>
+          <h4 class="immovables__swiper-title">
+            Дом из кирпича
+          </h4>
+          <p class="immovables__swiper-text">
+            Описание дома и его особенностей в несколько строк
+          </p>
+          <a href="#" class="immovables__swiper-link">
+            <svg width="38px" height="21px" fill="none">
+              <use xlink:href="img/icons/icons.svg#arrow"></use>
+            </svg>
+            <p>Подробнее</p>
+          </a>
+        </div>
+
+        <div class="immovables__swiper-slide swiper-slide">
+          <div class="immovables__swiper-img">
+            <img src="img/immovables3.jpg" alt="">
+          </div>
+          <h4 class="immovables__swiper-title">
+            Апартаменты
+          </h4>
+          <p class="immovables__swiper-text">
+            Описание дома и его особенностей в несколько строк
+          </p>
+          <a href="#" class="immovables__swiper-link">
+            <svg width="38px" height="21px" fill="none">
+              <use xlink:href="img/icons/icons.svg#arrow"></use>
+            </svg>
+            <p>Подробнее</p>
+          </a>
+        </div>
+
+        <div class="immovables__swiper-slide swiper-slide">
+          <div class="immovables__swiper-img">
+            <img src="img/immovables2.jpg" alt="">
+          </div>
+          <h4 class="immovables__swiper-title">
+            Дом из кирпича
+          </h4>
+          <p class="immovables__swiper-text">
+            Описание дома и его особенностей в несколько строк
+          </p>
+          <a href="#" class="immovables__swiper-link">
+            <svg width="38px" height="21px" fill="none">
+              <use xlink:href="img/icons/icons.svg#arrow"></use>
+            </svg>
+            <p>Подробнее</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="immovables__swiper-navigation">
+        <div class="immovables__swiper-swiper-button swiper-button-prev">
+          <svg width="30px" height="16px" fill="none">
+            <use xlink:href="img/icons/icons.svg#arrow"></use>
+          </svg>
+        </div>
+        <div class="immovables__swiper-swiper-button swiper-button-next">
+          <svg width="30px" height="16px" fill="none">
+            <use xlink:href="img/icons/icons.svg#arrow"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
     </main>
     <footer>

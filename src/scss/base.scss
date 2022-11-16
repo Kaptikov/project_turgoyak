@@ -12,7 +12,6 @@ $letterSpacing: 1%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  background-color: $bgColor;
 }
 
 ._container {
@@ -24,4 +23,91 @@ $letterSpacing: 1%;
 
 a:hover {
   color: $hoverColor;
+  transition: 0.15s;
+}
+
+.page {
+  flex: 1 1 auto;
+}
+
+// .swiper {
+//   width: 600px;
+//   height: 300px;
+// }
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  border: 1px solid $hoverColor;
+  border-radius: 50%;
+  width: 49px;
+  height: 49px;
+  transition: scale 0.3s ease-in-out;
+  color: #BAA174;
+
+  &:hover {
+    scale: 122%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    border: 1px solid #E1C39D;
+    width: 31px;
+    height: 31px;
+    // text-align: center;
+  }
+
+  .swiper-button-next svg {
+    width: 15px;
+    color: #E1C39D;
+  }
+
+  .swiper-button-prev svg {
+    width: 15px;
+    color: #E1C39D;
+  }
+}
+
+
+.swiper-button-prev {
+  transform: rotate(180deg);
+}
+
+.stop--scroll {
+  overflow: hidden;
+}
+
+._ibg {
+  position: relative;
+}
+
+._ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+$maxWidth: 1230;
+
+@mixin adaptiv-font($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $addMobSize: $addSize + $addSize * 0.7;
+
+  @media (max-width: 767px) {
+    font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth}));
+  }
+
+  @media (min-width: 767px) {
+    font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
+  }
 }

@@ -1,4 +1,12 @@
 @font-face {
+	font-family: GaramondPremierPro;
+	font-display: swap;
+	src: url("../fonts/Garamond Premier Pro Light Display.woff2") format("woff2"), url("../fonts/Garamond Premier Pro Light Display.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
 	font-family: Gilroy;
 	font-display: swap;
 	src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
@@ -10,7 +18,7 @@
 	font-family: HelveticaLight;
 	font-display: swap;
 	src: url("../fonts/helvetica_light.woff2") format("woff2"), url("../fonts/helvetica_light.woff") format("woff");
-	font-weight: 400;
+	font-weight: 300;
 	font-style: normal;
 }
 
